@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <label for="email">Inserire qui la tua email</label>
+        <input type="email" id="email">
+        <button onclick="emailFunction()">Premere</button>
+        <span id="email_result"></span>
+    </div>
+    
+    <div>
+        <label for="btn_random">Premere per scoprire se si ha vinto</label>
+        <button onclick="randomFunction()" id="btn_random">Premere</button>
+        <div id="random_game"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
