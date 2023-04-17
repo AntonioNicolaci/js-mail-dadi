@@ -1,6 +1,15 @@
 // array che contiene tutte le email presenti nel sistema.
 const database_email = ["carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"];
 
+function popUpEmail(){
+    document.getElementById("p_email").innerHTML = `<p>"carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"</p>
+    <button onclick="popDownEmail()" style="margin-bottom: 2em">Cliccami per farle scomparire</button>`
+}
+
+function popDownEmail(){
+    document.getElementById("p_email").innerHTML = "";
+}
+
 function emailFunction() { // funzione che controlla se l'email è presente nel sistema
     const email = document.getElementById("email").value; // prende il valore del campo nella pagina web che corrisponde all'email.
     let controllo_email = true; // se questa variabile diventa falsa attiverà un if che specifica che questa email non è presente nel database.

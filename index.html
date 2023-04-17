@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <span>Queste sono le email consentite:</span>
-        <p>
-            "carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"
-        </p>
+    <div id="div_email">
+        <div>
+            <span>Cliccare per mostrare le email (per velocizzare il controllo del lavoro)</span>
+            <button onclick="popUpEmail()">Cliccami! <!-- Io sono in venditaaa --></button>
+            <div id="p_email"></div>
+        </div>
         <label for="email">Inserire qui la tua email</label>
         <input type="email" id="email">
         <button onclick="emailFunction()">Premere</button>
         <span id="email_result"></span>
     </div>
     
-    <div>
+    <div id="div_dice">
         <label for="btn_random">Premere per scoprire se si ha vinto</label>
         <button onclick="randomFunction()" id="btn_random">Premere</button>
         <div id="random_game"></div>
