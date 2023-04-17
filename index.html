@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Sfida la fortuna:</h1>
     <div id="div_email">
+        <h2>La tua email sarà nel sistema?</h2>
         <div>
             <span>Cliccare per mostrare le email (per velocizzare il controllo del lavoro)</span>
             <button onclick="popUpEmail()">Cliccami! <!-- Io sono in venditaaa --></button>
             <div id="p_email"></div>
         </div>
-        <label for="email">Inserire qui la tua email</label>
-        <input type="email" id="email">
-        <button onclick="emailFunction()">Premere</button>
-        <span id="email_result"></span>
+        <span id="span_email">
+            <label for="email">Inserire qui la tua email per scoprirlo</label>
+            <input type="email" id="email">
+            <button onclick="emailFunction()">Premimi e scopri se hai vinto</button>   
+        </span>
+        <div id="email_result"></div>
     </div>
     
     <div id="div_dice">
