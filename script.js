@@ -1,12 +1,12 @@
 // array che contiene tutte le email presenti nel sistema.
 const database_email = ["carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"];
 
-function popUpEmail(){
+function popUpEmail(){ // funzione per far comparire le email per una lettura più facile dell'esercizio
     document.getElementById("p_email").innerHTML = `<p>"carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"</p>
     <button onclick="popDownEmail()" style="margin-bottom: 2em">Cliccami per farle scomparire</button>`
 }
 
-function popDownEmail(){
+function popDownEmail(){ // funzione per far scomparire le email
     document.getElementById("p_email").innerHTML = "";
 }
 
