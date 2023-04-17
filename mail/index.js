@@ -2,7 +2,26 @@
 const database_email = ["carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"];
 
 function popUpEmail(){ // funzione per far comparire le email per una lettura più facile dell'esercizio
-    document.getElementById("p_email").innerHTML = `<p>"carlocalenda69@parlamento.it", "stefanolavori@mela.com", "angeloporetti@luppolo.it", "hideokojima@kojimaproduction.jp", "giorgiomuratore@gmail.com", "francescofrattali@gmail.com", "antonionicolaci48@gmail.com", "milesmorales@nycollege.com", "wolfeyglickvgc@gmail.com", "paperellagialla@coding.com", "Gabriponte@siae.it", "superman@dc.com", "ironman@stark.com", "howardwolowitz@sinagogapasadena.com", "eugenio@twitch.com", "elonmusk@ceotwetter.com", "bellanapoli@gmail.com", "easter@egg.com", "sonostanco@capo.it"</p>
+    document.getElementById("p_email").innerHTML = 
+    `<span>carlocalenda69@parlamento.it</span>
+    <span>stefanolavori@mela.com</span>
+    <span>angeloporetti@luppolo.it</span>
+    <span>hideokojima@kojimaproduction.jp</span>
+    <span>giorgiomuratore@gmail.com</span>
+    <span>francescofrattali@gmail.com</span>
+    <span>antonionicolaci48@gmail.com</span>
+    <span>milesmorales@nycollege.com</span>
+    <span>wolfeyglickvgc@gmail.com</span>
+    <span>paperellagialla@coding.com</span>
+    <span>Gabriponte@siae.it</span>
+    <span>superman@dc.com</span>
+    <span>ironman@stark.com</span>
+    <span>howardwolowitz@sinagogapasadena.com</span>
+    <span>eugenio@twitch.com</span>
+    <span>elonmusk@ceotwetter.com</span>
+    <span>bellanapoli@gmail.com</span>
+    <span>easter@egg.com</span>
+    <span>sonostanco@capo.it</span>
     <button onclick="popDownEmail()" style="margin-bottom: 2em">Cliccami per farle scomparire</button>`
 }
 
@@ -26,16 +45,5 @@ function emailFunction() { // funzione che controlla se l'email è presente nel 
         if (controllo_email == false) { // entrare dentro questo if comporta che non c'erano email corrispondenti
             document.getElementById("email_result").innerHTML = `<span id="email_sbagliata">Email non presente nella lista</span>`;
         }
-    }
-}
-
-function randomFunction() { // funzione per il tiro di dado
-    const randomPC = Math.floor(Math.random() * 6) + 1;
-    const randomUtente = Math.floor(Math.random() * 6) + 1;
-
-    if (randomPC > randomUtente) {
-        document.getElementById("random_game").innerHTML = "Ha vinto il banco";
-    } else {
-        document.getElementById("random_game").innerHTML = "Ha vinto il giocatore";
     }
 }
