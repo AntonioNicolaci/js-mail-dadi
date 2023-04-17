@@ -4,15 +4,7 @@ body{
     align-items: center;
     background-color: aqua;
 }
-#p_email{
-    display: flex;
-    flex-direction: column;
-}
-#p_email button{
-    margin-top: .5em;
-    width: fit-content;
-}
-#div_email, #div_dice{
+#div_dice{
     padding: 1em;
     margin-bottom: 2em;
     border-radius: 15px;
@@ -20,20 +12,21 @@ body{
     display: flex;
     flex-direction: column;
 }
-#email_result{
-    width: auto;
-    text-align: center;
-    margin: 1.5em 0 .5em 0;
-}
-#email_giusta{
+#utente_vince{
     background-color: rgb(1, 173, 30);
     color: #fff;
     padding: 1em;
     border-radius: 1.5em;
 }
-#email_sbagliata{
+#banco_vince{
     background-color: rgb(173, 1, 1);
     color: #fff;
     padding: 1em;
     border-radius: 1.5em;
+}
+#btn_random{
+    margin-bottom: 2em;
+}
+#risultati_finali{
+    margin-top: 2em;
 }

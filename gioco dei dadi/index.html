@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavolo dei Dadi</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="div_dice">
         <label for="btn_random">Premere per scoprire se si ha vinto</label>
         <button onclick="randomFunction()" id="btn_random">Premere</button>
         <div id="random_game"></div>
+        <div id="risultati_finali">
+            <div>
+                <span id="span_utente"></span>
+                <span id="span_utente_numero"></span>    
+            </div>
+            <div>
+                <span id="span_pc"></span>
+                <span id="span_pc_numero"></span>    
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
